@@ -1,0 +1,145 @@
+@keyframes page-home-image {
+  from {
+    top: 450px;
+    transform: scale(1);
+  }
+  to {
+    top: 0px;
+    transform: scale(0.43);
+  }
+}
+@keyframes component-title-container-atom {
+  from {
+    padding-top: 30px;
+    opacity: 0%;
+  }
+  to {
+    padding-top: 0px;
+    opacity: 100%;
+  }
+}
+@keyframes page-homepage-text-wrapper {
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes page-homepage-button-containe {
+  from {
+    margin-top: 50px;
+    opacity: 0%;
+  }
+  to {
+    margin-top: 100px;
+    opacity: 100%;
+  }
+}
+@keyframes remove {
+  to {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+}
+@keyframes page-home-intro-layer {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes intro-layer-title {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes intro-layer-1 {
+  to {
+    visibility: "hidden";
+    height: 0;
+    width: 0;
+  }
+}
+@keyframes intro-layer-2 {
+  from {
+    transform: translate(-100%);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes intro-layer-2-half-1 {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+@keyframes intro-layer-2-half-2 {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(100%);
+  }
+}
+.page-homepage-container {
+  .component-title-container-atom {
+    animation: component-title-container-atom 1.5s;
+    animation-delay: 5.3s;
+    animation-fill-mode: forwards;
+  }
+  .page-home-intro-layer-1 {
+    animation: intro-layer-1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+  .page-home-intro-layer-2 {
+    transform: translate(-100%);
+    animation: intro-layer-2 ease-in 0.5s, remove;
+    animation-delay: 2s, 4s;
+    animation-fill-mode: forwards, forwards;
+    .page-home-intro-layer-2-half-1 {
+      animation: intro-layer-2-half-1 ease-in 0.5s;
+      animation-delay: 3.3s;
+      animation-fill-mode: forwards;
+    }
+    .page-home-intro-layer-2-half-2 {
+      animation: intro-layer-2-half-2 ease-in 0.5s;
+      animation-delay: 3.3s;
+      animation-fill-mode: forwards;
+    }
+  }
+  .page-home-intro-layer {
+    animation: page-home-intro-layer ease-in 0.4s;
+    animation-delay: 3.3s;
+    animation-fill-mode: forwards;
+    span {
+      transform: scale(0);
+      animation: intro-layer-title ease-in 0.5s;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+    }
+  }
+  .page-homepage-image-wrapper {
+    img {
+      animation: page-home-image 2s;
+      animation-delay: 4.8s;
+      animation-fill-mode: forwards;
+    }
+  }
+  .page-homepage-text-wrapper {
+    animation: page-homepage-text-wrapper 2s;
+    animation-delay: 5.1s;
+    animation-fill-mode: forwards;
+  }
+  .page-homepage-button-container {
+    animation: page-homepage-button-containe 1.5s;
+    animation-delay: 5.3s;
+    animation-fill-mode: forwards;
+  }
+}

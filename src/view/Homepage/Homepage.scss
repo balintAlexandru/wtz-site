@@ -1,0 +1,107 @@
+@import "helpers/style/variables";
+
+//Browser design
+.page-homepage-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .page-home-intro-layer-1 {
+    width: 100%;
+    height: 100vh;
+    background-color: $startLayerColor;
+    position: absolute;
+  }
+  .page-home-intro-layer-2 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow-x: hidden;
+    display: flex;
+    .page-home-intro-layer-2-half-1 {
+      height: 100vh;
+      width: 50%;
+      background-color: $customBlue;
+    }
+    .page-home-intro-layer-2-half-2 {
+      height: 100vh;
+      width: 50%;
+      background-color: $customBlue;
+    }
+  }
+  .page-home-intro-layer {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      color: $customWhite;
+      font-size: 80px;
+      font-weight: $extraBold;
+    }
+  }
+  .component-title-container-atom {
+    opacity: 0%;
+    height: 61px;
+  }
+  .page-homepage-image-wrapper {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 110px;
+    position: relative;
+    img {
+      display: block;
+      position: absolute;
+      transform: scale(1);
+      top: 450px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  .page-homepage-text-wrapper {
+    opacity: 0%;
+    width: 749px;
+    height: 55px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 12px 0 12px;
+    span {
+      color: $customBlue;
+      font-weight: $bold;
+      font-size: 21px;
+    }
+    p {
+      font-size: 21px;
+      color: $customWhite;
+      font-weight: $regular;
+      line-height: 30px;
+    }
+  }
+  .page-homepage-button-container {
+    opacity: 0%;
+    width: 194px;
+    height: 144px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    p {
+      color: $customBlue;
+      font-size: 20px;
+      font-weight: $regular;
+      margin-bottom: 40px;
+    }
+    .page-homepage-button-wrapper {
+      align-self: center;
+      .default-button-atom {
+        width: 48px;
+        height: 80px;
+        border: 1px solid $customBlue;
+        background-color: $customButtonBackground;
+      }
+    }
+  }
+}

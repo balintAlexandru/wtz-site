@@ -1,0 +1,12 @@
+@import "helpers/style/variables";
+
+.component-title-container-atom {
+    width: 100%;
+    text-align: center;
+    span {
+      font-size: 50px;
+      font-weight: $bold;
+      color: $customBlue;
+      letter-spacing: 1px;
+    }
+  }
