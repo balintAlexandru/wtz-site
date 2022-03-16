@@ -1,0 +1,15 @@
+
+@import "helpers/style/variables";
+
+.component-loading-animation-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $startLayerColor;
+  .component-loading-animation {
+    width: 300px;
+    height: 300px;
+  }
+}
